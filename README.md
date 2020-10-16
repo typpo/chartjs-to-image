@@ -1,9 +1,9 @@
-QuickChart for Javascript
+Chart.js to Image
 ---
 [![npm](https://img.shields.io/npm/v/chartjs-to-image)](https://www.npmjs.com/package/chartjs-to-image)
 [![Build Status](https://travis-ci.com/typpo/chartjs-to-image.svg?branch=master)](https://travis-ci.com/typpo/chartjs-to-image)
 
-This is a wrapper for generating images of Chart.js graphs.  It works on the server side as well as client side (although on the client you may prefer to use [toBase64Image](https://quickchart.io/documentation/chart-js/image-export/#use-tobase64image-in-the-browser)).
+This is a wrapper for exporting Chart.js as an image.  It works on the server side as well as client side (although on the client you may prefer to use [toBase64Image](https://quickchart.io/documentation/chart-js/image-export/#use-tobase64image-in-the-browser)).
 
 The renderer is based on QuickChart, a free and open-source web service for generating static charts.  View the main QuickChart repository [here](https://github.com/typpo/quickchart).
 
@@ -20,7 +20,7 @@ npm install chartjs-to-image
 This library provides a **ChartJsImage** object.  Import it, instantiate it, and set your [Chart.js](https://www.chartjs.org) config:
 
 ```js
-const ChartJsImage = require('quickchart-js');
+const ChartJsImage = require('chartjs-to-image');
 
 const myChart = new ChartJsImage();
 myChart.setConfig({
