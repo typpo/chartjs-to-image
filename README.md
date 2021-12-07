@@ -1,7 +1,8 @@
 Chart.js to Image
 ---
 [![npm](https://img.shields.io/npm/v/chartjs-to-image)](https://www.npmjs.com/package/chartjs-to-image)
-[![Build Status](https://travis-ci.com/typpo/chartjs-to-image.svg?branch=master)](https://travis-ci.com/typpo/chartjs-to-image)
+[![npm](https://img.shields.io/npm/dt/chartjs-to-image)](https://www.npmjs.com/package/chartjs-to-image)
+[![Build Status](https://app.travis-ci.com/typpo/chartjs-to-image.svg?branch=main)](https://app.travis-ci.com/typpo/chartjs-to-image)
 
 This is a wrapper for exporting Chart.js as an image.  It works on the server side as well as client side (although on the client you may prefer to use [toBase64Image](https://quickchart.io/documentation/chart-js/image-export/#use-tobase64image-in-the-browser)).
 
