@@ -11,11 +11,11 @@
     "format": "prettier --single-quote --trailing-comma all --print-width 100 --write \"**/*.js\""
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "javascript-stringify": "^2.0.1"
+    "axios": "^0.24.0",
+    "javascript-stringify": "^2.1.0"
   },
   "devDependencies": {
-    "jest": "^26.0.1",
+    "jest": "^27.4.3",
     "prettier": "^2.0.5"
   }
 }
