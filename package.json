@@ -1,6 +1,6 @@
 {
   "name": "chartjs-to-image",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Convert Chart.js to image",
   "main": "index.js",
   "repository": "https://github.com/typpo/chartjs-to-image",
