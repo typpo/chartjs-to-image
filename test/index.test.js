@@ -15,6 +15,7 @@ test('basic chart, no auth', () => {
   expect(qc.getUrl()).toContain('/chart?');
   expect(qc.getUrl()).toContain('w=500');
   expect(qc.getUrl()).toContain('h=300');
+  expect(qc.getUrl()).toContain('v=2');
 });
 
 test('basic chart, width and height', () => {
@@ -44,6 +45,18 @@ test('basic chart, other params', () => {
   expect(qc.getUrl()).toContain('devicePixelRatio=2');
   expect(qc.getUrl()).toContain('f=svg');
   expect(qc.getUrl()).toContain('bkg=%23000000');
+});
+
+test('basic chart, version', () => {
+  const qc = new ChartJsImage();
+  qc.setConfig({
+    type: 'bar',
+    data: { labels: ['Hello world', 'Foo bar'], datasets: [{ label: 'Foo', data: [1, 2] }] },
+  });
+  qc.setChartJsVersion('3.9.1');
+
+  expect(qc.getUrl()).toContain('Hello+world');
+  expect(qc.getUrl()).toContain('&v=3.9.1');
 });
 
 test('js chart', () => {

@@ -69,6 +69,10 @@ All the above examples create this following Chart.js image:
 
 Use this config to customize the Chart.js config object that defines your chart.  You must set this before creating any outputs!
 
+### setChartJsVersion(version: string)
+
+Sets the version of Chart.js to use.  Defaults to the latest version of Chart.js v2.  For version 3, valid settings include: "3" or "3.9.1".
+
 ### setWidth(width: int)
 
 Sets the width of the chart in pixels.  Defaults to 500.

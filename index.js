@@ -18,6 +18,7 @@ class ChartJsImage {
     this.devicePixelRatio = 1.0;
     this.backgroundColor = '#ffffff';
     this.format = 'png';
+    this.version = '2';
   }
 
   setConfig(chartConfig) {
@@ -50,6 +51,11 @@ class ChartJsImage {
     return this;
   }
 
+  setChartJsVersion(version) {
+    this.version = version;
+    return this;
+  }
+
   isValid() {
     if (!this.chart) {
       return false;
@@ -74,11 +80,14 @@ class ChartJsImage {
     if (this.format !== 1.0) {
       ret.searchParams.append('f', this.format);
     }
+    if (this.version) {
+      ret.searchParams.append('v', this.version);
+    }
     return ret.href;
   }
 
   getPostData() {
-    const { width, height, chart, format, backgroundColor, devicePixelRatio } = this;
+    const { width, height, chart, format, backgroundColor, devicePixelRatio, version } = this;
     const postData = {
       width,
       height,
@@ -92,6 +101,9 @@ class ChartJsImage {
     }
     if (devicePixelRatio) {
       postData.devicePixelRatio = devicePixelRatio;
+    }
+    if (version) {
+      postData.version = version;
     }
     return postData;
   }
