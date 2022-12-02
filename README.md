@@ -83,7 +83,7 @@ Sets the height of the chart in pixels.  Defaults to 300.
 
 ### setFormat(format: string)
 
-Sets the format of the chart.  Defaults to `png`.  `svg` is also valid.
+Sets the format of the chart.  Defaults to `png`.  `svg` and `webp` are also valid.
 
 ### setBackgroundColor(color: string)
 
