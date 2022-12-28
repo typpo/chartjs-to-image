@@ -71,7 +71,7 @@ Use this config to customize the Chart.js config object that defines your chart.
 
 ### setChartJsVersion(version: string)
 
-Sets the version of Chart.js to use.  Defaults to the latest version of Chart.js v2.  For version 3, valid settings include: "3" or "3.9.1".
+Sets the version of Chart.js to use.  Defaults to the latest version of Chart.js v2.  Other valid version settings include: "3", "4", "3.9.1", "4.1.1", etc.
 
 ### setWidth(width: int)
 
