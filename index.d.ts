@@ -13,7 +13,7 @@ declare class ChartJsImage {
   getPostData(): {
     width: number;
     height: number;
-    chart: object;
+    chart: string;
     format?: string;
     backgroundColor?: string;
     devicePixelRatio?: number;
@@ -22,7 +22,7 @@ declare class ChartJsImage {
   getShortUrl(): Promise<string>;
   toBinary(): Promise<Buffer>;
   toDataUrl(): Promise<string>;
-  toFile(pathOrDescriptor: string): Promise<File>;
+  toFile(pathOrDescriptor: string): Promise<void>;
 }
 
 export = ChartJsImage;
