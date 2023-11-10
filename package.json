@@ -11,7 +11,7 @@
     "format": "prettier --single-quote --trailing-comma all --print-width 100 --write \"**/*.js\""
   },
   "dependencies": {
-    "axios": "^0.24.0",
+    "axios": "^1.6.0",
     "javascript-stringify": "^2.1.0"
   },
   "devDependencies": {
