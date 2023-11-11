@@ -17,5 +17,10 @@
   "devDependencies": {
     "jest": "^27.4.3",
     "prettier": "^2.0.5"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "axios": "axios/dist/node/axios.cjs"
+    }
   }
 }
