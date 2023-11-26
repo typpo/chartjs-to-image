@@ -170,3 +170,9 @@ chart.setWidth(500).setHeight(300).setBackgroundColor('#0febc2');
 
 const buf = await chart.toBinary();
 ```
+
+# Troubleshooting
+
+**oQ.post is not a function**
+
+This library does not support browser usage. For a drop-in replacement with browser support, see [quickchart-js](https://github.com/typpo/quickchart-js).
