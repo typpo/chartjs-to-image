@@ -1,7 +1,9 @@
+import { ChartConfiguration } from 'chart.js'
+
 declare class ChartJsImage {
   constructor(apiKey?: string, accountId?: string);
 
-  setConfig(chartConfig: object): this;
+  setConfig(chartConfig: ChartConfiguration): this;
   setWidth(width: number | string): this;
   setHeight(height: number | string): this;
   setBackgroundColor(color: string): this;
